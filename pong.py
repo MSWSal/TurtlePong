@@ -84,3 +84,12 @@ elif ball.xcor() < -390:
     ball.dx *= -1
     points["p2"] +=1
 
+#top and bottom collisions
+
+if ball.ycor() > 290:
+    ball.sety(290)
+    ball.dy *=-1
+elif ball.ycor() < -290:
+    ball.sety(-290)
+    ball.dy *=-1
+
