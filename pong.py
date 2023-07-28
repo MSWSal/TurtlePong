@@ -108,5 +108,11 @@ def Lpaddown():
 def Rpadup():
     Rpad.dy = 10
 
-def Rpadup():
+def Rpaddown():
     Rpad.dy = -10
+
+turtle.listen()
+turtle.onkeypress(Lpadup,"w")
+turtle.onkeypress(Lpaddown,"s")
+turtle.onkeypress(Rpadup,"Up")
+turtle.onkeypress(Rpaddown, "Down")
