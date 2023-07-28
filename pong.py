@@ -29,7 +29,8 @@ ball.penup()
 ball.goto(0, 0)
 
 #Rules
-gameover =Falsewinner =None
+gameover =False
+winner = None
 points = {
     "p1":0,
     "p2":0
@@ -46,3 +47,20 @@ scoredisplay.penup()
 scoredisplay.hideturtle()
 scoredisplay.goto(0, 260)
 scoredisplay.write("Player 1: 0 Player 2: 0", align="center", font=("Arial", 24, "normal"))
+
+
+Lpad.sety(Lpad.ycor() + Lpad.dy)
+Rpad.sety(Rpad.ycor() + Rpad.dy)
+
+ball.setx(ball.xcor() + ball.dx)
+ball.sety(ball.ycor() + ball.dy)
+
+#check whether game over conditions occured
+
+if points["p1"] == gamerules["maxpoints"]:
+    gameover=True
+    winner="p1"
+elif points["p2"] == gamerules["maxpoints"]:
+    gameover=True
+    winner="p2"
+
