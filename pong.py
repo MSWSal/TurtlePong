@@ -39,3 +39,10 @@ gamerules ={
     "ballspeed":3
 }
 
+#ScoreCard
+scoredisplay = turtle.Turtle
+scoredisplay.color="white"
+scoredisplay.penup()
+scoredisplay.hideturtle()
+scoredisplay.goto(0, 260)
+scoredisplay.write("Player 1: 0 Player 2: 0", align="center", font=("Arial", 24, "normal"))
