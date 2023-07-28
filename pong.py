@@ -93,3 +93,6 @@ elif ball.ycor() < -290:
     ball.sety(-290)
     ball.dy *=-1
 
+#Update score display
+scoredisplay.clear()
+scoredisplay.write("Player 1: {}  Player 2: {}".format(points["p1"],points["p1"]),align="center", font=("Arial", 24, "normal"))
