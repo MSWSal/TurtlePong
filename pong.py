@@ -96,3 +96,17 @@ elif ball.ycor() < -290:
 #Update score display
 scoredisplay.clear()
 scoredisplay.write("Player 1: {}  Player 2: {}".format(points["p1"],points["p1"]),align="center", font=("Arial", 24, "normal"))
+
+#paddle movement defs
+
+def Lpadup():
+    Lpad.dy = 10
+
+def Lpaddown():
+    Lpad.dy = -10
+
+def Rpadup():
+    Rpad.dy = 10
+
+def Rpadup():
+    Rpad.dy = -10
