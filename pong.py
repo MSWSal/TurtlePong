@@ -72,3 +72,15 @@ if(ball.xcor()>340 and ball.xcor()<350) and (ball.ycor() < Rpad.ycor() +50 and b
 elif(ball.xcor()<-340 and ball.xcor()> -350) and (ball.ycor() < Lpad.ycor() +50 and ball.ycor() > Lpad.ycor() -50):
     ball.setx(-340)
     ball.dx *= -1
+
+
+#offscreen ball
+if ball.xcor() > 390:
+    ball.goto(0, 0)
+    ball.dx *= -1
+    points["p1"] +=1
+elif ball.xcor() < -390:
+    ball.goto(0, 0)
+    ball.dx *= -1
+    points["p2"] +=1
+
