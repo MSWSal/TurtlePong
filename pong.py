@@ -20,3 +20,10 @@ Rpad.shapesize(stretch_wid=5, stretch_len=1)
 Rpad.penup()
 Rpad.goto(350, 0)
 Rpad.dy = 0
+
+#Ball
+ball=turtle.Turtle()
+ball.shape("circle")
+ball.color("white")
+ball.penup()
+ball.goto(0, 0)
